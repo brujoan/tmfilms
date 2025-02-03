@@ -1,4 +1,10 @@
-# React + Vite
+# Web TMFilms [React + Vite]
+
+Proyecto de la página web de TMFilms. Por documentar.
+
+Para iniciar: npm run dev
+
+## Autogenerado
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
