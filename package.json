@@ -1,7 +1,7 @@
 {
-  "name": "tmfilms_v3",
+  "name": "tmfilms",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
