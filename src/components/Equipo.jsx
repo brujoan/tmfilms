@@ -126,7 +126,7 @@
             />
 				<div className="flex flex-col items-center">
 					<h4 className="text-xl font-anonymous font-bold">Joan Bru</h4>
-					<p className="text-lg dark:text-gray-600 font-anonymous font-bold">Cámara, Terrorista buscado en 4 países</p>
+					<p className="text-lg dark:text-gray-600 font-anonymous font-bold">Cámara</p>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-600">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">
