@@ -3,3 +3,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Humaroid';
+    src: url('./assets/fonts/Humaroid.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Humaroid', sans-serif;
+    cursor: url('./assets/pointer.cur'), auto;
+  }
+
+  .sombra-fuerte {
+    box-shadow: 0 40px 70px -20px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Opcional: Cambiar el cursor al pasar sobre enlaces o botones */
+  a, button {
+    /* Puedes usar otro cursor personalizado o uno estándar */
+    cursor: url('./assets/link.cur'), pointer;
+  }

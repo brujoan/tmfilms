@@ -1,34 +1,53 @@
-import killerSun from "../assets/KillerSun.jpg";
-import prejuicios from "../assets/Prejuicios.jpg";
+import ellas from "../assets/Ellas.jpg";
+import conectandoMundos from "../assets/ConectandoMundos.jpg";
 import tenienteWalker from "../assets/TenienteWalker.jpg";
 import castillo from "../assets/Castillo.jpg";
 import igestio from "../assets/igestio.jpg";
+import peluqueriaPilar from "../assets/PeluqueriaPilar.jpg";
+import santFeliu from "../assets/SantFeliu.jpg";
 
 export const PROYECTOS_DATA = [
   {
-    imagen: prejuicios,
-    titulo: "PREJUICIOS",
+    imagen: conectandoMundos,
+    titulo: "CONECTANDO MUNDOS - EP 1",
     categoria: "PROYECTOS PROPIOS",
+    videoUrl: "https://www.youtube.com/watch?v=6utJXNZpvQo&t=22s&ab_channel=TMFILMS" // Añadido
   },
   {
     imagen: castillo,
     titulo: "EL CASTILLO DEL INFIERNO",
     categoria: "PROYECTOS PROPIOS",
+    videoUrl: "https://www.youtube.com/watch?v=vsk9hU4TyG4&t=25s&ab_channel=Pangu" // Añadido
   },
   {
     imagen: igestio,
     titulo: "IGESTIÓ SPOT",
     categoria: "PUBLICIDAD",
+    videoUrl: "https://www.youtube.com/watch?v=6NvPclCZoAM&ab_channel=TMFILMS" // Añadido
   },
   {
     imagen: tenienteWalker,
     titulo: "EL TENIENTE WALKER",
     categoria: "PROYECTOS PROPIOS",
+    videoUrl: "https://www.youtube.com/watch?v=7CPPYxVaoa8&ab_channel=Pangu" // Añadido
   },
   {
-    imagen: killerSun,
-    titulo: "KILLER SUN",
+    imagen: ellas,
+    titulo: "ELLAS - Cortometraje TMFILMS",
     categoria: "PROYECTOS PROPIOS",
+    videoUrl: "https://www.youtube.com/watch?v=6DgYW8T7oJ0&ab_channel=TMFILMS" // Añadido
+  },
+  {
+    imagen: peluqueriaPilar,
+    titulo: "SPOT PELUQUERÍA PILAR MARIN",
+    categoria: "PUBLICIDAD",
+    videoUrl: "https://www.youtube.com/watch?v=YecJ4rNCp7o&t=7s&ab_channel=TMFILMS" // Añadido
+  },
+  {
+    imagen: santFeliu,
+    titulo: "SPOT LA BARBERÍA SANT FELIU",
+    categoria: "PUBLICIDAD",
+    videoUrl: "https://www.youtube.com/watch?v=rt2fPUivqnU&ab_channel=TMFILMS" // Añadido
   },
 ];
 
