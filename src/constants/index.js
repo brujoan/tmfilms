@@ -55,7 +55,7 @@ export const NOSOTROS_TEXT = `El equipo de TMFilms está compuesto por jóvenes 
 
 export const CONTACTO = {
   address: "Oficinas próximamente",
-  phoneNo: "+34 666 62 74 94",
+  phoneNo: "Whatsapp +34 666 62 74 94",
   email: "tmfilmsproductora@gmail.com",
 };
 
