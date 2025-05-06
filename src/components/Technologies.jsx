@@ -121,7 +121,7 @@ const Technologies = ({
 
 			<div
 				ref={iconosRef}
-				style={{ height: isFixed ? iconosRef.current?.offsetHeight : "auto" }}
+				style={{ height: isFixed ? iconosRef.current?.offsetHeight : "auto"}}
 			/>
 
 			<div
@@ -133,7 +133,7 @@ const Technologies = ({
 
 				<motion.div
 					className={`flex items-center justify-center gap-4 px-3 py-3 rounded-md ${
-						isFixed ? 'shadow-lg' : ''
+						isFixed ? 'sombra-fuerte' : ''
 					}`}
 					style={{
 						backdropFilter: isFixed ? "blur(10px)" : "none",

@@ -6,7 +6,7 @@ import david from "../assets/david.png";
 import joan from "../assets/joan.png";
 
 
-const NOSOTROS_TEXT = "Somos un equipo apasionado por la creación audiovisual, combinando talento técnico y visión artística para llevar tus ideas al siguiente nivel."; // Texto de ejemplo
+const NOSOTROS_TEXT = "Somos un equipo apasionado por la creación audiovisual, combinando talento técnico y visión artística para llevar tus ideas al siguiente nivel.";
 
 const miembrosEquipo = [
     {
@@ -14,7 +14,7 @@ const miembrosEquipo = [
         name: "Victor Torreño",
         role: "Editor",
         image: victor,
-        description: "Montador principal, filmógrafo y VFX. De día graba y de noche edita, vamos, que duerme cada 29 de Febrero.", // Descripción un poco más larga para probar scroll
+        description: "Montador principal, filmógrafo y VFX. De día graba y de noche edita, vamos, que duerme cada 29 de Febrero.",
         socials: [
             { type: 'youtube', href: 'https://www.youtube.com/@victortcv', title: 'YouTube' },
             { type: 'instagram', href: 'https://www.instagram.com/victortklk/', title: 'Instagram' },
@@ -48,7 +48,7 @@ const miembrosEquipo = [
         name: "Joan Bru",
         role: "Cámara",
         image: joan,
-        description: "Director de Fotografía, montador y guionista. El perfil más artístico, revolucionario y talentoso. Como guionista me han encasquetado escribir esto, tendré que aprovechar digo yo… ¿Os he dicho también que soy muy ingenioso verdad? ¡Mira mamá, rompo la cuarta pared!",
+        description: "Director de Fotografía, montador y guionista. El perfil más artístico, revolucionario y talentoso. ¿Os he dicho que soy muy ingenioso? ¡Mira mamá, rompo la cuarta pared!",
         socials: [
             { type: 'youtube', href: 'https://www.youtube.com/@mixunets', title: 'YouTube' },
             { type: 'instagram', href: 'https://www.instagram.com/joan_brru/', title: 'Instagram' },
@@ -90,8 +90,12 @@ const TeamMemberCard = memo(({ member, isExpanded, onClick }) => {
     };
 
     const cardVariants = {
-        expanded: { width: "400px" },
-        collapsed: { width: "200px" }
+		expanded: {
+			width: "300px"
+		  },
+		  collapsed: {
+			width: '200px'
+		  }
     };
 
     const cardTransition = { duration: 0.5, type: "spring", stiffness: 100, damping: 15 };
@@ -112,7 +116,7 @@ const TeamMemberCard = memo(({ member, isExpanded, onClick }) => {
     return (
         <motion.div
             key={member.id}
-            className={`card cursor-pointer h-[450px] border-8 border-black shadow-2xl bg-cover bg-center overflow-hidden`} // Mantenemos overflow-hidden aquí
+            className={`card cursor-pointer h-[450px] border-8 border-black shadow-2xl bg-cover bg-center overflow-hidden`}
             variants={cardVariants}
             initial="collapsed"
             animate={isExpanded ? 'expanded' : 'collapsed'}
@@ -125,11 +129,11 @@ const TeamMemberCard = memo(({ member, isExpanded, onClick }) => {
 
             <div className='card-content h-full flex flex-col justify-end'>
 
-                <div className='card-footer bg-black bg-opacity-75 flex flex-col items-center justify-start pt-3 w-full min-h-[100px]'> {/* Cambiado a justify-start y pt-3 */}
+                <div className='card-footer bg-black bg-opacity-75 flex flex-col items-center justify-start pt-3 w-full min-h-[100px]'>
 
                     <h2 className='text-lg md:text-xl font-humaroid font-bold text-white text-center'>{member.name}</h2>
 
-                    <p className="text-md text-gray-300 dark:text-gray-400 font-humaroid font-semibold mb-1">{member.role}</p>
+                    <p className="text-lg text-gray-300 dark:text-gray-400 font-humaroid font-semibold mb-1">{member.role}</p>
 
                     <motion.div
 
@@ -141,7 +145,7 @@ const TeamMemberCard = memo(({ member, isExpanded, onClick }) => {
 
                         <div className="">
 
-                            <p className='text-gray-200 text-center text-sm px-1'>{member.description}</p>
+                            <p className='text-gray-200 text-center font-humaroid font-semibold text-md px-1'>{member.description}</p>
                             <div className="flex justify-center mt-1 space-x-3">
                                 {member.socials.map((social) => (
                                     <a
