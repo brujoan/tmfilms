@@ -37,7 +37,7 @@ const miembrosEquipo = [
         name: "David Sieso",
         role: "Técnico de sonido",
         image: david,
-        description: "Operador de cámara y técnico de sonido. Si la pereza, la informalidad y el poco esfuerzo se llamasen Goliat, David se llamaría… pues eso, David.",
+        description: "Operador de cámara y técnico de sonido. Si la pereza, la informalidad y el poco esfuerzo se llamaran Goliat, David sería quien lo derrota, y no es casualidad, ya que se llama David",
         socials: [
             { type: 'instagram', href: 'https://www.instagram.com/daavidsiieso/', title: 'Instagram' },
             { type: 'linkedin', href: 'https://www.linkedin.com/in/david-sieso-929329255/', title: 'LinkedIn' },
@@ -57,7 +57,7 @@ const miembrosEquipo = [
     },
 ];
 
-const SocialIcon = ({ type, className = "w-4 h-4" }) => {
+const Iconos = ({ type, className = "w-4 h-4" }) => {
     switch (type) {
         case 'youtube':
             return (
@@ -158,7 +158,7 @@ const TeamMemberCard = memo(({ member, isExpanded, onClick }) => {
                                         onDragStart={(e) => e.preventDefault()}
                                         target="_blank"
                                     >
-                                        <SocialIcon type={social.type} className="w-5 h-5" />
+                                        <Iconos type={social.type} className="w-5 h-5" />
                                     </a>
                                 ))}
                             </div>

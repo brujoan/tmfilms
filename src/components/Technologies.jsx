@@ -109,7 +109,7 @@ const Technologies = ({
 
 
 	return (
-		<div className="flex flex-col items-center justify-center w-full">
+		<div className="flex flex-col items-center justify-center w-full select-none">
 
 			<motion.div
 				className="flex items-center justify-center mb-4"
@@ -275,7 +275,6 @@ const Technologies = ({
 							/>
 						</div>
 					</motion.div>
-
 				</motion.div>
 			</div>
 		</div>
